@@ -1,6 +1,7 @@
 package exo.chap03_classes;
-class Point
-{ public Point (char c, double x)   // constructeur
+// exo23
+class Pointt
+{ public Pointt (char c, double x)   // constructeur
   { nom = c ;
     abs = x ;
   }
@@ -15,9 +16,9 @@ class Point
 }
 public class TstPtAxe
 { public static void main (String args[])
-  { Point a = new Point ('C', 2.5) ;
+  { Pointt a = new Pointt ('C', 2.5) ;
     a.affiche() ;
-    Point b = new Point ('D', 5.25) ;
+    Pointt b = new Pointt ('D', 5.25) ;
     b.affiche() ;
     b.translate(2.25) ;
     b.affiche() ;
