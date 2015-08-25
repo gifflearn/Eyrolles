@@ -1,5 +1,6 @@
 package exo.chap03_classes;
-class Util
+import tools.Clavier;
+class Utils
 { public static int acker (int m, int n)
   { if ( (m<0) || (n<0) ) return 0 ;
     else if (m == 0) return n+1 ;
@@ -14,7 +15,7 @@ public class Acker
     m = Clavier.lireInt() ;
     System.out.print ("Second parametre  : ") ;
     n = Clavier.lireInt() ;
-    System.out.println ("acker (" + m + ", " + n + ") = " + Util.acker(m, n)) ;
+    System.out.println ("acker (" + m + ", " + n + ") = " + Utils.acker(m, n)) ;
   }
 }
 

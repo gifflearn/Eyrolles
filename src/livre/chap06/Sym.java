@@ -1,11 +1,11 @@
 package livre.chap06;
-class Point
-{ public Point(int abs, int ord)
+class Pointj
+{ public Pointj(int abs, int ord)
   { x = abs ; y = ord ;
   }
-  public Point symetrique()
-  { Point res ;
-    res = new Point (y, x) ;
+  public Pointj symetrique()
+  { Pointj res ;
+    res = new Pointj (y, x) ;
     return res ;
   }
   public void affiche ()
@@ -15,9 +15,9 @@ class Point
 }
 public class Sym
 { public static void main (String args[])
-  { Point a = new Point (1, 2) ;
+  { Pointj a = new Pointj (1, 2) ;
     a.affiche() ;
-    Point b = a.symetrique() ;
+    Pointj b = a.symetrique() ;
     b.affiche() ;
   }
 }

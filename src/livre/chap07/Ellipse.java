@@ -6,7 +6,7 @@ public class Ellipse
     System.out.println (somme (3) ) ;
   }
 
-  static int somme (int ... valeurs)
+  static int somme (int ... valeurs) // ellipse
   { int s = 0 ;
     for (int v : valeurs)
       s += v ;
