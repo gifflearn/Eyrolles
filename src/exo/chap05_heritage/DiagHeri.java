@@ -2,15 +2,20 @@ package exo.chap05_heritage;
 class A
 { public void affiche() { System.out.println ("Je suis un A") ; }
 }
+
 class B extends A {}
+
 class C extends A
 { public void affiche() { System.out.println ("Je suis un C") ; }
 }
+
 class D extends C
 { public void affiche() { System.out.println ("Je suis un D") ; }
 }
 class E extends B {}
+
 class F extends C {}
+
 public class DiagHeri
 { public static void main (String arg[])
   { A a = new A() ; a.affiche() ;
