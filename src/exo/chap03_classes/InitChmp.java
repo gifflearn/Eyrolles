@@ -1,6 +1,7 @@
 package exo.chap03_classes;
-class A
-{ public A (int coeff)
+//exo24
+class AA
+{ public AA (int coeff)
   { nbre *= coeff ;
     nbre += decal ;
   }
@@ -12,7 +13,7 @@ class A
 }
 public class InitChmp
 { public static void main (String args[])
-  { A a = new A (5) ; a.affiche() ;
+  { AA a = new AA (5) ; a.affiche() ;
   }
 }
 

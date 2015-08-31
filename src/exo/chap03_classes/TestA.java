@@ -1,4 +1,5 @@
 package exo.chap03_classes;
+//exo28
 class A
 { void f (int n, float x) {  }
   void g (byte b) {  }

@@ -1,4 +1,5 @@
 package exo.chap03_classes;
+//exo26
 class Entier
 { public Entier (int nn)    { n = nn ; }
   public void incr (int dn) { n += dn ; }
@@ -7,13 +8,13 @@ class Entier
 }
 public class TstEnt
 { public static void main (String args[])
-  { Entier n1 = new Entier (2) ; System.out.print ("n1 = ") ; n1.imprime() ;
-    Entier n2 = new Entier (5) ; System.out.print ("n1 = ") ; n2.imprime() ;
-    n1.incr(3) ;                 System.out.print ("n1 = ") ; n1.imprime() ;
-    System.out.println ("n1 == n2 est " + (n1 == n2)) ;
-    n1 = n2 ;  n2.incr(12) ;     System.out.print ("n2 = ") ; n2.imprime() ;
-                                 System.out.print ("n1 = ") ; n1.imprime() ;
-    System.out.println ("n1 == n2 est " + (n1 == n2)) ;
+  { Entier n1 = new Entier (2) ; System.out.print ("n1 = ") ; n1.imprime() ; //n1=2
+    Entier n2 = new Entier (5) ; System.out.print ("n1 = ") ; n2.imprime() ; // n2=5
+    n1.incr(3) ;                 System.out.print ("n1 = ") ; n1.imprime() ; // n1=5
+    System.out.println ("n1 == n2 est " + (n1 == n2)) ; // faux
+    n1 = n2 ;  n2.incr(12) ;     System.out.print ("n2 = ") ; n2.imprime() ; // n2=17
+                                 System.out.print ("n1 = ") ; n1.imprime() ; // n1 = 17
+    System.out.println ("n1 == n2 est " + (n1 == n2)) ; // vrai
   }
 }
 

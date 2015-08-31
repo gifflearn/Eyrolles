@@ -1,22 +1,35 @@
 package exo.chap03_classes;
+
+import my_tools.Clavier;
+
+
+//exo 32
 class Ident
-{ public Ident ()
+{ 
+	public Ident ()
   { num = numCour ;
     numCour++ ;
   }
-  public int getIdent()
-  { return num ;
-  }
-  public static int getIdentMax()
-  { return numCour-1 ;
-  }
+  
+	public int getIdent()
+	  { return num ;
+	  }
+  
+	public static int getIdentMax()
+	  { return numCour-1 ;
+	  }
+  
   private static int numCour ;   // prochaint numero a attribuer
   private int num ;              // numéro de l'objet
-  static
-  { System.out.print ("donnez le premier identificateur : ") ;
-    do numCour = Clavier.lireInt() ; while (numCour <= 0) ;
-  }
+  
+	static // methode de classe
+	  { System.out.print ("donnez le premier identificateur : ") ;
+	    do numCour = Clavier.lireInt() ; while (numCour <= 0) ;
+	  }
+  
 }
+
+
 public class TstIden2
 { public static void main (String args[])
   { Ident a = new Ident(), b = new Ident() ;

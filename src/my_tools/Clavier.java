@@ -1,5 +1,6 @@
-package tools;
-// classe fournissant des fonctions de lecture au clavier
+package my_tools;
+
+// classe fournissant des fonctions de lecture au clavier -
 import java.io.* ;
 public class Clavier
 { public static String lireString ()   // lecture d'une chaine
@@ -61,9 +62,6 @@ public class Clavier
     int n  ;
     n = Clavier.lireInt() ;
     System.out.println ("merci pour " + n) ;
-    System.out.println ("donnez une ligne de texte") ;
-    String ch = Clavier.lireString() ;
-    System.out.println ("merci pour " + ch) ;
   }
 }
 
