@@ -100,55 +100,6 @@ public class JF_99 {
 		}
 		catch (ErrNatJf e) {
 			// System.out.println("erreur");
-=======
-class ErrNatJf extends Exception {
-	
-}
-	class ErrConsJf extends ErrNatJf {
-		public ErrConsJf(int val) {
-			System.out.println("Erreur de construction : Valeur non positive : "+val);
 		}
 	}
-	class ErrOpJf extends ErrNatJf {
-		System.out.println("Erreur op�ration : ");
-	}
-		class ErrSomJf extends ErrOpJf {
-			
-		}
-		class ErrDiffJf extends ErrOpJf {
-			
-		}
-		class ErrProdJf extends ErrOpJf {
-			
-		}
-class NatJf {
-	
-	public NatJf(int i) throws ErrConsJf {
-		if (i<=0) throw new ErrConsJf(i);
-		 this.val=i;
-	}
-	
-	private int val ;
-	
-}
-
-public class JF_99 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		NatJf ent1,ent2;
-		try {
-			ent1 = new NatJf(2);
-			ent2 = new NatJf(-6);
-		}
-		catch (ErrConsJf e) {
->>>>>>> branch 'master' of https://github.com/gifflearn/Eyrolles
-			System.exit (-1) ;
-		}
-		
-
-		
-	}
-
 }
