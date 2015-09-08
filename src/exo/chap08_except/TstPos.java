@@ -39,5 +39,5 @@ Que fait
 
 
 /* notes perso
-
+Boucle tant qu'il na pas reçu un entier positif
 */
