@@ -1,4 +1,6 @@
 package livre.chap20;
+import my_tools.Clavier;
+
 import java.io.* ;
 public class Accdir
 { public static void main (String args[]) throws IOException

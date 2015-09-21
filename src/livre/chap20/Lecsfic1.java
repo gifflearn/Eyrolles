@@ -1,4 +1,5 @@
 package livre.chap20;
+import my_tools.*;
 import javax.swing.* ;  // pour showInputDialog
 import java.io.* ;
 public class Lecsfic1

@@ -1,5 +1,7 @@
 package livre.chap20;
 import java.io.* ;
+import my_tools.Clavier;
+
 public class Crsfic1
 { public static void main (String args[]) throws IOException
   {
@@ -9,6 +11,7 @@ public class Crsfic1
     nomfich = Clavier.lireString() ;
     DataOutputStream sortie = new DataOutputStream
                              ( new FileOutputStream (nomfich)) ;
+    //
     do { System.out.print ("donnez un entier : ") ;
          n = Clavier.lireInt() ;
          if (n != 0)
@@ -16,6 +19,7 @@ public class Crsfic1
           }
        }
     while (n != 0) ;
+    //
     sortie.close () ;
     System.out.println ("*** fin creation fichier ***");
   }
