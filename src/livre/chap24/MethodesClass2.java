@@ -2,7 +2,7 @@ package livre.chap24;
 import java.lang.reflect.*;
 public class MethodesClass2
 {  public static void main(String args[])
-   { Point p = new Point() ;
+   { Ypoint p = new Ypoint() ;
      Class<?> c = p.getClass() ; 
      Field champs[] = c.getDeclaredFields() ;
        // affichage des informations relatives aux champs de la classe de p
@@ -17,9 +17,9 @@ public class MethodesClass2
       }
    }
 }
-class Point
-{ public Point() { x=0 ; y=0 ; compte++ ;}
-  public Point(int x, int y) {this.x = x ; this.y = y ; compte++ ;}
+class Ypoint
+{ public Ypoint() { x=0 ; y=0 ; compte++ ;}
+  public Ypoint(int x, int y) {this.x = x ; this.y = y ; compte++ ;}
   public void deplace (int dx, int dy) { x+=dx ; y+= dy ; }
   private void symetrise() { x = -x ; y= -y ; }
   public static void afficheNbre ()
